@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 
+sudo apt install i3
+
 # Move i3 config file to i3 directory
 
 
@@ -12,10 +14,10 @@ gsettings set org.mate.session required-components-list "['windowmanager', 'pane
 
 # Move theme and icons to appropriate directories
 
-mkdir -p ~./icons/
-cp ./yaru-blue/Icons/* ~./icons/.
-mkdir -p ~./themes/
-cp ./yaru-blue/Theme/* ~./themes/.
+mkdir -p ~/.icons/
+cp -r ./yaru-blue/Icons/* ~/.icons/.
+mkdir -p ~/.themes/
+cp -r ./yaru-blue/Theme/* ~/.themes/.
 
 # Set the theme and icons
 
