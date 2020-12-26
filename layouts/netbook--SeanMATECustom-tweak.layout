@@ -1,0 +1,73 @@
+[Toplevel top]
+enable-buttons=false
+size=40
+screen=0
+monitor=0
+expand=true
+orientation=bottom
+
+[Object briskmenu]
+locked=true
+toplevel-id=top
+position=0
+object-type=applet
+applet-iid=BriskMenuFactory::BriskMenu
+panel-right-stick=false
+
+[Object dockapplet]
+locked=true
+toplevel-id=top
+position=44
+object-type=applet
+applet-iid=DockAppletFactory::DockApplet
+panel-right-stick=false
+
+[Object windowbuttonsapplet]
+locked=true
+toplevel-id=top
+position=20
+object-type=applet
+applet-iid=WindowButtonsAppletFactory::WindowButtonsApplet
+panel-right-stick=true
+
+[Object notificationarea]
+locked=true
+toplevel-id=top
+position=10
+object-type=applet
+applet-iid=NotificationAreaAppletFactory::NotificationArea
+panel-right-stick=true
+
+[Object indicatorappletcomplete]
+locked=true
+toplevel-id=top
+position=0
+object-type=applet
+applet-iid=IndicatorAppletCompleteFactory::IndicatorAppletComplete
+panel-right-stick=true
+
+[Object object-4]
+locked=false
+toplevel-id=top
+position=1540
+object-type=applet
+applet-iid=CommandAppletFactory::CommandApplet
+panel-right-stick=false
+
+[Object object-0]
+locked=false
+toplevel-id=top
+position=1340
+object-type=applet
+applet-iid=AppmenuAppletFactory::AppmenuApplet
+panel-right-stick=false
+
+[Customsetting maximusdecoration]
+mate-maximus-undecorate=True
+mate-maximus-recorded=True
+
+[Customsetting windowcontrollayout]
+mate-general=:minimize,maximize,close
+mate-interface=:minimize,maximize,close
+gnome-wm-preferences=:minimize,maximize,close
+

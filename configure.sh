@@ -25,7 +25,10 @@ bash ./matetoi3.sh
 
 # Install theme, icons and fonts
 
-snap install yaru-colors
+#snap install yaru-colors
+
+git clone https://github.com/Jannomag/Yaru-Colors.git ./themes/.
+bash ./themes/install.sh
 
 git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme.git ./icons/.
 bash ./icons/install.sh
