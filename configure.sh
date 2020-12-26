@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
 
-# Install i3wm
+# Install i3wm (I like this fork that has support for gaps and rounded corners)
 
-sudo apt install i3
+git clone https://github.com/terroo/i3-radius.git
+bash ./i3-radius/build.sh
 
-# Move i3 config file to i3 directory
+# Move i3 config file and desktop indicator script to i3 directory
 
 mkdir -p ~/.config/i3/
 cp ./config ~/.config/i3/.
+cp ./desktops.sh ~/.config/i3/.
 
 # Drop in i3 for the window manager
 
@@ -38,4 +40,4 @@ gsettings set org.mate.interface icon-theme 'ePapirus'
 
 gsettings set com.solus-project.brisk-menu hot-key ''
 
-# Move desktop indicator script to i3 folder
+
