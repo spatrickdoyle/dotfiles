@@ -1,43 +1,23 @@
-
 #Set mod key
 set $mod Mod4
-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-
 #Set gaps and borders
-#for_window [class=".*"] border pixel 0
-#gaps inner 9
-
 for_window [class="^.*"] border pixel 0
 gaps inner 35
 gaps outer 0
-#gaps top 40
 border_radius 7
-
-##### i3-gaps ##############
-#for_window [class=".*"] border pixel 0 #*
-#gaps inner 30
-#gaps outer 0
-#gaps horizontal 2
-
-################# i3-radius #######################
-#smart_borders on
-#smart_borders no_gaps
-#border_radius 5 #3
 
 #font
 font pango:Hack 11
 
+#start nm-applet
+exec --no-startup-id nm-applet
+
 #Focus mode
 focus_follows_mouse no
-
-
-#bindsym $mod+x exec "google-chrome --app=http://www.spatrickdoyle.com";layout tabbed;
-
-#bindsym $mod+z exec "/home/sean/.i3/togglepolybar.sh"
 
 #sticky toggle
 bindsym $mod+w sticky toggle
